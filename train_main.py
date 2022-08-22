@@ -44,7 +44,7 @@ class SequentialMeta(object):
 
         self.iterator = True
         if self.iterator:
-            dir_path = '/media/zheshiyige/Elements/NIPS2021 data/data/fishprocess.pt'
+            dir_path = '/data/fishprocess.pt'
             self.fish = torch.load(dir_path)
             num_train = int(0.7*len(self.fish))
             self.train_fishOOD = self.fish[0:num_train]
